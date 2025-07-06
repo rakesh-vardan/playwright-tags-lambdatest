@@ -31,7 +31,7 @@ jobs:
 
       - name: Run Playwright tests on LambdaTest
         run: |
-          npx playwright test --project="chrome:latest:Windows 11@lambdatest" --grep "@smoke"
+          npx playwright test --project="chrome:latest:Windows 11@lambdatest" --grep "@critical"
         
       - name: Upload Playwright Report
         if: always()
