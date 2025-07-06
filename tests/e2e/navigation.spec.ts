@@ -1,6 +1,8 @@
 import { test, expect } from '@playwright/test';
 import { testConfig } from '../config/testConfig';
 
+// This file contains tests tagged using both old and new tagging strategies.
+
 test.describe('Category Navigation', { tag: ['@navigation', '@e2e'] }, () => {
 
     test('navigate to category page', { tag: ['@smoke', '@navigation', '@positive', '@p1'] }, async ({ page }) => {
