@@ -7,7 +7,7 @@ test.describe('Search Functionality', { tag: ['@search', '@e2e'] }, () => {
         await page.goto(testConfig.routes.home);
     });
 
-    test('should search for a valid product', { tag: ['@smoke', '@search', '@positive', '@p1'] }, async ({ page }) => {
+    test('should search for a valid product', { tag: ['@smoke', '@search', '@positive', '@p1', '@critical'] }, async ({ page }) => {
         await page.fill('input[name="search"]', 'iphone');
         await page.click('button[type="submit"]');
 
